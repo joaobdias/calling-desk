@@ -2,8 +2,7 @@ import image from "../../assets/image.jpg";
 import { Logo } from "../../components/Logo";
 import { TitleField } from "../../components/TitleField";
 import { Input } from "../../components/Input";
-import { ButtonBlack } from "../../components/ButtonBlack";
-import { ButtonGray } from "../../components/ButtonGray";
+import { Button } from "../../components/Button";
 import { useNavigate } from "react-router";
 import { Section } from "../../components/Section";
 
@@ -31,15 +30,23 @@ export function SignIn() {
             <Input title="E-MAIL" placeholder="exemplo@email.com" />
             <Input title="SENHA" placeholder="senha" />
           </div>
-          <ButtonBlack textButton="Entrar" />
+          <Button
+            textButton="Entrar"
+            bgColor="bg-black"
+            hoverColor="bg-gray-500"
+            textColor="text-white"
+          />
         </Section>
         <Section>
           <TitleField
             title="Ainda sem conta?"
             description="Crie agora mesmo!"
           />
-          <ButtonGray
+          <Button
             textButton="Criar conta"
+            bgColor="bg-gray-200"
+            hoverColor="bg-gray-500"
+            textColor="text-black"
             onClick={() => nav("/criar-conta")}
           />
         </Section>

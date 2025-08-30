@@ -1,7 +1,6 @@
 import { useNavigate } from "react-router";
 import image from "../../assets/image.jpg";
-import { ButtonBlack } from "../../components/ButtonBlack";
-import { ButtonGray } from "../../components/ButtonGray";
+import { Button } from "../../components/Button";
 import { Input } from "../../components/Input";
 import { Logo } from "../../components/Logo";
 import { TitleField } from "../../components/TitleField";
@@ -32,7 +31,12 @@ export function SignUp() {
             <Input title="E-MAIL" placeholder="exemplo@email.com" />
             <Input title="SENHA" placeholder="senha" />
           </div>
-          <ButtonBlack textButton="Cadastrar" />
+          <Button
+            textButton="Criar"
+            bgColor="bg-black"
+            hoverColor="bg-gray-500"
+            textColor="text-white"
+          />
         </Section>
 
         <Section>
@@ -40,7 +44,13 @@ export function SignUp() {
             title="Já tem uma conta?"
             description="Entre agora mesmo!"
           />
-          <ButtonGray textButton="Acessar conta" onClick={() => nav("/")} />
+          <Button
+            textButton="Acessar conta"
+            bgColor="bg-gray-200"
+            hoverColor="bg-gray-500"
+            textColor="text-black"
+            onClick={() => nav("/")}
+          />
         </Section>
       </div>
     </div>
