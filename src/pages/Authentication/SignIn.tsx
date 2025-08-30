@@ -5,6 +5,7 @@ import { Input } from "../../components/Input";
 import { ButtonBlack } from "../../components/ButtonBlack";
 import { ButtonGray } from "../../components/ButtonGray";
 import { useNavigate } from "react-router";
+import { Section } from "../../components/Section";
 
 export function SignIn() {
   const nav = useNavigate();
@@ -21,7 +22,7 @@ export function SignIn() {
         <div className="flex justify-center mt-16">
           <Logo />
         </div>
-        <div className="flex flex-col border-1 border-gray-200 rounded-2xl mt-8 ml-36 mr-36 p-8">
+        <Section>
           <TitleField
             title="Acesse o Portal"
             description="Entre usando seu e-mail e senha"
@@ -31,8 +32,8 @@ export function SignIn() {
             <Input title="SENHA" placeholder="senha" />
           </div>
           <ButtonBlack textButton="Entrar" />
-        </div>
-        <div className="flex flex-col border-1 border-gray-200 rounded-2xl mt-8 ml-36 mr-36 p-8">
+        </Section>
+        <Section>
           <TitleField
             title="Ainda sem conta?"
             description="Crie agora mesmo!"
@@ -41,7 +42,7 @@ export function SignIn() {
             textButton="Criar conta"
             onClick={() => nav("/criar-conta")}
           />
-        </div>
+        </Section>
       </div>
     </div>
   );

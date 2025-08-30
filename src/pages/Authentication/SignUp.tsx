@@ -5,6 +5,7 @@ import { ButtonGray } from "../../components/ButtonGray";
 import { Input } from "../../components/Input";
 import { Logo } from "../../components/Logo";
 import { TitleField } from "../../components/TitleField";
+import { Section } from "../../components/Section";
 
 export function SignUp() {
   const nav = useNavigate();
@@ -21,7 +22,7 @@ export function SignUp() {
         <div className="flex justify-center mt-16">
           <Logo />
         </div>
-        <div className="flex flex-col border-1 border-gray-200 rounded-2xl mt-8 ml-36 mr-36 p-8">
+        <Section>
           <TitleField
             title="Crie sua conta"
             description="Informe seu nome, e-mail e senha"
@@ -32,14 +33,15 @@ export function SignUp() {
             <Input title="SENHA" placeholder="senha" />
           </div>
           <ButtonBlack textButton="Cadastrar" />
-        </div>
-        <div className="flex flex-col border-1 border-gray-200 rounded-2xl mt-8 ml-36 mr-36 p-8">
+        </Section>
+
+        <Section>
           <TitleField
             title="Já tem uma conta?"
             description="Entre agora mesmo!"
           />
           <ButtonGray textButton="Acessar conta" onClick={() => nav("/")} />
-        </div>
+        </Section>
       </div>
     </div>
   );
