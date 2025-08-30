@@ -3,11 +3,11 @@ type ButtonProp = React.ComponentProps<"button"> & {
   onClick?: () => void;
 };
 
-export function ButtonGray({ textButton, onClick }: ButtonProp) {
+export function ButtonBlack({ textButton, onClick }: ButtonProp) {
   return (
     <div className="flex mt-4">
       <button
-        className="bg-gray-200 hover:bg-gray-500 text-black p-2 flex-1 rounded-lg"
+        className="bg-black hover:bg-gray-500 text-white p-2 flex-1 rounded-lg"
         type="button"
         onClick={onClick}
       >
