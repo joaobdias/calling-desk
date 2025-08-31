@@ -4,7 +4,9 @@ export function Logo() {
   return (
     <div className="flex">
       <img src={logoImg} alt="Logo" />
-      <h1 className="m-2 text-2xl text-blue-900">HelpDesk</h1>
+      <h1 className="m-2 text-2xl text-blue-dark font-[Lato] font-extrabold">
+        HelpDesk
+      </h1>
     </div>
   );
 }

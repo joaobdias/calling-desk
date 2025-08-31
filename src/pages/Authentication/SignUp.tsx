@@ -30,11 +30,14 @@ export function SignUp() {
             <Input title="NOME" placeholder="Digite o nome completo" />
             <Input title="E-MAIL" placeholder="exemplo@email.com" />
             <Input title="SENHA" placeholder="senha" />
+            <p className="text-gray-300 italic text-sm mt-1">
+              Mínimo de 6 dígitos
+            </p>
           </div>
           <Button
             textButton="Criar"
-            bgColor="bg-black"
-            hoverColor="bg-gray-500"
+            bgColor="bg-gray-100"
+            hoverColor="bg-gray-300"
             textColor="text-white"
           />
         </Section>
@@ -46,8 +49,8 @@ export function SignUp() {
           />
           <Button
             textButton="Acessar conta"
-            bgColor="bg-gray-200"
-            hoverColor="bg-gray-500"
+            bgColor="bg-gray-500"
+            hoverColor="bg-gray-400"
             textColor="text-black"
             onClick={() => nav("/")}
           />

@@ -32,8 +32,8 @@ export function SignIn() {
           </div>
           <Button
             textButton="Entrar"
-            bgColor="bg-black"
-            hoverColor="bg-gray-500"
+            bgColor="bg-gray-100"
+            hoverColor="bg-gray-300"
             textColor="text-white"
           />
         </Section>
@@ -44,8 +44,8 @@ export function SignIn() {
           />
           <Button
             textButton="Criar conta"
-            bgColor="bg-gray-200"
-            hoverColor="bg-gray-500"
+            bgColor="bg-gray-500"
+            hoverColor="bg-gray-400"
             textColor="text-black"
             onClick={() => nav("/criar-conta")}
           />

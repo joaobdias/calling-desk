@@ -6,8 +6,8 @@ type TitleField = {
 export function TitleField({ title, description }: TitleField) {
   return (
     <div>
-      <h1 className="font-bold text-2xl">{title}</h1>
-      <p className="text-gray-500">{description}</p>
+      <h1 className="font-bold text-2xl font-[Lato] ">{title}</h1>
+      <p className="text-gray-300">{description}</p>
     </div>
   );
 }
